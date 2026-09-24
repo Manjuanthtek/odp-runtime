@@ -1,0 +1,7 @@
+2026-09-24 17:25:27.124 [warning] Dir "/home/mdbaddi/.pixi/envs" is not watchable (directory does not exist)
+2026-09-24 17:25:29.508 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
+2026-09-24 17:25:29.537 [info] > conda info --json
+2026-09-24 17:25:29.541 [info] Python interpreter path: /bin/python
+2026-09-24 17:25:29.684 [info] > pyenv which python
+2026-09-24 17:25:29.685 [info] cwd: .
+2026-09-24 17:25:36.445 [info] Starting Jedi language server for mdbaddi.

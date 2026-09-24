@@ -1,0 +1,131 @@
+{
+  "eventType": "COMPLETE",
+  "eventTime": "2026-05-19T10:00:00.001Z",
+  "run": {
+    "runId": "9d4c8c2a-5e76-4f3f-9d65-c9f3f4a5b111",
+    "facets": {
+      "metadataEnrichment": {
+        "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
+        "_schemaURL": "https://example.com/openlineage/facets/metadataEnrichmentRunFacet.json",
+        "project_id": "proj-12345",
+        "environment": "dev"
+      }
+    }
+  },
+  "job": {
+    "namespace": "my-namespace",
+    "name": "orders-etl2",
+    "facets": {
+      "jobType": {
+        "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
+        "_schemaURL": "https://openlineage.io/spec/facets/1-0-0/JobTypeJobFacet.json",
+        "processingType": "BATCH",
+        "integration": "AIRFLOW",
+        "jobType": "DAG"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "namespace": "my-namespace",
+      "name": "raw.crm-customer-profile_snapshot",
+      "facets": {
+        "schema": {
+          "_producer": "https://openlineage.io",
+          "_schemaURL": "https://openlineage.io/spec/facets/1-0-0/SchemaDatasetFacet.json",
+          "fields": [
+            { "name": "cust_id", "type": "STRING" },
+            { "name": "full_name", "type": "STRING" }
+          ]
+        },
+        "metadataEnrichment": {
+          "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
+          "_schemaURL": "https://example.com/openlineage/facets/metadataEnrichmentDatasetFacet.json",
+          "data_classification": "internal"
+        }
+      }
+    },
+    {
+      "namespace": "my-namespace",
+      "name": "raw.sales-order-lineitem_daily",
+      "facets": {
+        "schema": {
+          "_producer": "https://openlineage.io",
+          "_schemaURL": "https://openlineage.io/spec/facets/1-0-0/SchemaDatasetFacet.json",
+          "fields": [
+            { "name": "customer_id", "type": "STRING" },
+            { "name": "order_amount", "type": "DOUBLE" }
+          ]
+        },
+        "metadataEnrichment": {
+          "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
+          "_schemaURL": "https://example.com/openlineage/facets/metadataEnrichmentDatasetFacet.json",
+          "data_classification": "confidential"
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "namespace": "my-namespace",
+      "name": "analytics.customer-360_enriched",
+      "facets": {
+        "schema": {
+          "_producer": "https://openlineage.io",
+          "_schemaURL": "https://openlineage.io/spec/facets/1-0-0/SchemaDatasetFacet.json",
+          "fields": [
+            { "name": "customer_id", "type": "STRING" },
+            { "name": "customer_name", "type": "STRING" },
+            { "name": "total_order_amount", "type": "DOUBLE" }
+          ]
+        },
+        "columnLineage": {
+          "_producer": "https://openlineage.io",
+          "_schemaURL": "https://openlineage.io/spec/facets/1-0-0/ColumnLineageDatasetFacet.json",
+          "fields": {
+            "customer_id": {
+              "inputFields": [
+                {
+                  "namespace": "my-namespace",
+                  "name": "raw.crm-customer-profile_snapshot",
+                  "field": "cust_id"
+                }
+              ],
+              "transformationType": "IDENTITY",
+              "transformationDescription": "cust_id"
+            },
+            "customer_name": {
+              "inputFields": [
+                {
+                  "namespace": "my-namespace",
+                  "name": "raw.crm-customer-profile_snapshot",
+                  "field": "full_name"
+                }
+              ],
+              "transformationType": "IDENTITY",
+              "transformationDescription": "full_name"
+            },
+            "total_order_amount": {
+              "inputFields": [
+                {
+                  "namespace": "my-namespace",
+                  "name": "raw.sales-order-lineitem_daily",
+                  "field": "order_amount"
+                }
+              ],
+              "transformationType": "AGGREGATION",
+              "transformationDescription": "SUM(order_amount)"
+            }
+          }
+        },
+        "metadataEnrichment": {
+          "_producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
+          "_schemaURL": "https://example.com/openlineage/facets/metadataEnrichmentDatasetFacet.json",
+          "data_classification": "restricted"
+        }
+      }
+    }
+  ],
+  "producer": "https://github.com/OpenLineage/OpenLineage/blob/v1-0-0/client",
+  "schemaURL": "https://openlineage.io/spec/1-0-5/OpenLineage.json#/definitions/RunEvent"
+}

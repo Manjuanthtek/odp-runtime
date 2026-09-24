@@ -1,0 +1,37 @@
+2026-09-24 17:25:13.407 [info] Extension host with pid 1514 started
+2026-09-24 17:25:13.407 [error] Error: EEXIST: file already exists, open '/home/mdbaddi/.codeoss/data/User/workspaceStorage/3829101e/vscode.lock'
+2026-09-24 17:25:13.409 [info] Lock '/home/mdbaddi/.codeoss/data/User/workspaceStorage/3829101e/vscode.lock': Could not acquire lock, checking if the file is stale.
+2026-09-24 17:25:13.410 [info] Lock '/home/mdbaddi/.codeoss/data/User/workspaceStorage/3829101e/vscode.lock': The pid 1708 appears to be gone.
+2026-09-24 17:25:13.410 [info] Lock '/home/mdbaddi/.codeoss/data/User/workspaceStorage/3829101e/vscode.lock': Deleting a stale lock.
+2026-09-24 17:25:13.429 [info] Lock '/home/mdbaddi/.codeoss/data/User/workspaceStorage/3829101e/vscode.lock': Lock acquired.
+2026-09-24 17:25:13.547 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-09-24 17:25:13.549 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-09-24 17:25:13.550 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onView:cloudcode.gemini.chatView'
+2026-09-24 17:25:14.736 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-09-24 17:25:15.101 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onCommand:cloudshell.isAuthorized'
+2026-09-24 17:25:15.134 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-09-24 17:25:15.135 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-09-24 17:25:15.444 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-09-24 17:25:15.444 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-09-24 17:25:15.445 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-09-24 17:25:15.699 [info] Eager extensions activated
+2026-09-24 17:25:15.699 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2026-09-24 17:25:15.701 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2026-09-24 17:25:15.701 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-09-24 17:25:15.702 [info] ExtensionService#_doActivateExtension google.gemini-cli-vscode-ide-companion, startup: false, activationEvent: 'onStartupFinished'
+2026-09-24 17:25:15.702 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-09-24 17:25:16.767 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2026-09-24 17:25:17.393 [info] ExtensionService#_doActivateExtension googlecloudtools.datacloud, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2026-09-24 17:25:23.159 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2026-09-24 17:25:33.602 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-09-24 17:38:45.217 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-09-24 17:38:45.217 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+2026-09-24 17:39:22.848 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:24.541 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:30.376 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:35.556 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:41.538 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:46.747 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:51.921 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:57.189 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:40:02.434 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560

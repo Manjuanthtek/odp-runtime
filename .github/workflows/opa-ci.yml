@@ -1,0 +1,59 @@
+name: OPA CI/CD
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  opa-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup OPA CLI
+        uses: open-policy-agent/setup-opa@v2
+        with:
+          version: latest
+
+      - name: Check Rego Formatting
+        run: |
+          # Fails if any .rego files are not formatted according to 'opa fmt'
+          opa fmt --fail .
+
+      - name: OPA Check (Syntax Validation)
+        run: |
+          opa check .
+
+      - name: Run OPA Tests
+        run: |
+          opa test . -v
+
+  opa-deploy:
+    name: Build and Deploy OPA Bundle
+    needs: opa-validation
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup OPA CLI
+        uses: open-policy-agent/setup-opa@v2
+        with:
+          version: latest
+
+      - name: Build Policy Bundle
+        run: |
+          # Compiles Rego policies into a production-optimized bundle
+          opa build . -o bundle.tar.gz
+
+      - name: Build Docker Image for OPA Pod
+        run: |
+          # Placeholder for building your OPA container image.
+          # Replace 'my-opa-pod' with your actual image name and registry URL.
+          echo "Building Docker image..."
+          # docker build -t my-opa-pod:${{ github.sha }} .
+          # docker push my-opa-pod:${{ github.sha }}
