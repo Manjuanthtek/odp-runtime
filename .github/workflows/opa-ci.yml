@@ -50,10 +50,23 @@ jobs:
           # Compiles Rego policies into a production-optimized bundle
           opa build . -o bundle.tar.gz
 
-      - name: Build Docker Image for OPA Pod
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and Push Docker Image
         run: |
-          # Placeholder for building your OPA container image.
-          # Replace 'my-opa-pod' with your actual image name and registry URL.
-          echo "Building Docker image..."
-          # docker build -t my-opa-pod:${{ github.sha }} .
-          # docker push my-opa-pod:${{ github.sha }}
+          # Construct the image name using your GitHub handle
+          IMAGE_ID=ghcr.io/${{ github.repository_owner }}/opa-policy-pod
+          
+          # Convert to lowercase (required for Docker tags)
+          IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
+          
+          echo "Building image $IMAGE_ID..."
+          docker build -t $IMAGE_ID:${{ github.sha }} .
+          docker tag $IMAGE_ID:${{ github.sha }} $IMAGE_ID:latest
+          docker push $IMAGE_ID:${{ github.sha }}
+          docker push $IMAGE_ID:latest
