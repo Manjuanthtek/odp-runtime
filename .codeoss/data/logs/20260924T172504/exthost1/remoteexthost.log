@@ -1,0 +1,88 @@
+2026-09-24 17:25:13.407 [info] Extension host with pid 1514 started
+2026-09-24 17:25:13.407 [error] Error: EEXIST: file already exists, open '/home/mdbaddi/.codeoss/data/User/workspaceStorage/3829101e/vscode.lock'
+2026-09-24 17:25:13.409 [info] Lock '/home/mdbaddi/.codeoss/data/User/workspaceStorage/3829101e/vscode.lock': Could not acquire lock, checking if the file is stale.
+2026-09-24 17:25:13.410 [info] Lock '/home/mdbaddi/.codeoss/data/User/workspaceStorage/3829101e/vscode.lock': The pid 1708 appears to be gone.
+2026-09-24 17:25:13.410 [info] Lock '/home/mdbaddi/.codeoss/data/User/workspaceStorage/3829101e/vscode.lock': Deleting a stale lock.
+2026-09-24 17:25:13.429 [info] Lock '/home/mdbaddi/.codeoss/data/User/workspaceStorage/3829101e/vscode.lock': Lock acquired.
+2026-09-24 17:25:13.547 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-09-24 17:25:13.549 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-09-24 17:25:13.550 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onView:cloudcode.gemini.chatView'
+2026-09-24 17:25:14.736 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-09-24 17:25:15.101 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onCommand:cloudshell.isAuthorized'
+2026-09-24 17:25:15.134 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-09-24 17:25:15.135 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-09-24 17:25:15.444 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-09-24 17:25:15.444 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-09-24 17:25:15.445 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-09-24 17:25:15.699 [info] Eager extensions activated
+2026-09-24 17:25:15.699 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2026-09-24 17:25:15.701 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2026-09-24 17:25:15.701 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-09-24 17:25:15.702 [info] ExtensionService#_doActivateExtension google.gemini-cli-vscode-ide-companion, startup: false, activationEvent: 'onStartupFinished'
+2026-09-24 17:25:15.702 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-09-24 17:25:16.767 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2026-09-24 17:25:17.393 [info] ExtensionService#_doActivateExtension googlecloudtools.datacloud, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2026-09-24 17:25:23.159 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2026-09-24 17:25:33.602 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-09-24 17:38:45.217 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-09-24 17:38:45.217 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+2026-09-24 17:39:22.848 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:24.541 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:30.376 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:35.556 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:41.538 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:46.747 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:51.921 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:39:57.189 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:40:02.434 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:40:08.825 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:40:14.137 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6560
+2026-09-24 17:40:19.992 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6562
+2026-09-24 17:40:25.232 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6562
+2026-09-24 17:40:30.453 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6562
+2026-09-24 17:40:35.680 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6562
+2026-09-24 17:40:44.565 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6562
+2026-09-24 17:40:53.575 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6562
+2026-09-24 17:40:58.776 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6563
+2026-09-24 17:41:04.007 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6563
+2026-09-24 17:41:09.208 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6563
+2026-09-24 17:41:14.904 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6563
+2026-09-24 17:41:20.098 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6563
+2026-09-24 17:41:27.825 [warning] [Decorations] CAPPING events from decorations provider vscode.git 6563
+2026-09-24 18:02:00.222 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
+2026-09-24 18:11:04.392 [warning] [Decorations] CAPPING events from decorations provider vscode.git 263
+2026-09-24 18:11:09.531 [warning] [Decorations] CAPPING events from decorations provider vscode.git 263
+2026-09-24 18:11:14.649 [warning] [Decorations] CAPPING events from decorations provider vscode.git 263
+2026-09-24 18:11:19.836 [warning] [Decorations] CAPPING events from decorations provider vscode.git 263
+2026-09-24 18:11:24.958 [warning] [Decorations] CAPPING events from decorations provider vscode.git 263
+2026-09-24 18:11:30.107 [warning] [Decorations] CAPPING events from decorations provider vscode.git 263
+2026-09-24 18:25:40.267 [error] Error: unauthorized.
+    at e.Authorization.authorize (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloud-shell/dist/extension.js:1:6008)
+    at qS.h (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:117:41918)
+    at module$exports$google3$third_party$cloudcode$vscode$common$packages$cloudshell$authorization.CloudShellTheiaAuth.promptForOrGetAuth (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1031976:3)
+    at module$exports$google3$third_party$cloudcode$vscode$common$packages$cloudshell$authorization.CloudShellTheiaAuth.runAuthorization (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1031975:13)
+    at CloudShellAuthProvider.getAccessToken (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1031853:3)
+    at module$exports$google3$cloud$developer_experience$datacloud_vscode$common$exthost$services$datacloud_experimentation_service.DatacloudExperimentationService.updateExperimentationDataCache (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1027563:63)
+    at module$exports$google3$cloud$developer_experience$datacloud_vscode$common$exthost$services$datacloud_experimentation_service.DatacloudExperimentationService.updateExperimentationDataCache (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1030518:367)
+    at module$exports$google3$cloud$developer_experience$datacloud_vscode$common$exthost$services$datacloud_experimentation_service.DatacloudExperimentationService.updateExperimentationData (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1027562:376) cloudshell.authorize {"value":"google.cloud-shell","_lower":"google.cloud-shell"}
+2026-09-24 18:25:40.268 [error] Error: unauthorized.
+    at e.Authorization.authorize (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloud-shell/dist/extension.js:1:6008)
+    at qS.h (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:117:41918)
+    at module$exports$google3$third_party$cloudcode$vscode$common$packages$cloudshell$authorization.CloudShellTheiaAuth.promptForOrGetAuth (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1031976:3)
+    at module$exports$google3$third_party$cloudcode$vscode$common$packages$cloudshell$authorization.CloudShellTheiaAuth.runAuthorization (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1031975:13)
+    at CloudShellAuthProvider.getAccessToken (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1031853:3)
+    at module$exports$google3$cloud$developer_experience$datacloud_vscode$common$exthost$services$datacloud_experimentation_service.DatacloudExperimentationService.updateExperimentationDataCache (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1027563:63)
+    at module$exports$google3$cloud$developer_experience$datacloud_vscode$common$exthost$services$datacloud_experimentation_service.DatacloudExperimentationService.updateExperimentationDataCache (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1030518:367)
+    at module$exports$google3$cloud$developer_experience$datacloud_vscode$common$exthost$services$datacloud_experimentation_service.DatacloudExperimentationService.updateExperimentationData (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1027562:376) cloudshell.authorize {"value":"google.cloud-shell","_lower":"google.cloud-shell"}
+2026-09-24 18:25:41.285 [error] Error: Error calling Cloud Shell Theia Authorization. unauthorized.
+    at t.CloudShellTheiaAuth.validCache [as runAuthorization] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/common/packages/cloudshell/authorization.ts:86:13)
+    at t.CloudShellAuthProvider.accessToken [as getAccessToken] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/common/packages/auth/cloudshell_auth_provider.ts:51:35)
+    at c.updateExperimentationDataCache (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/common/packages/experimentation/experiment_service.ts:339:11)
+    at c.updateExperimentationData (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/common/packages/experimentation/experiment_service.ts:330:117)
+    at c.updateExperimentationData (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/extension.js:14:12525487)
+2026-09-24 18:25:41.297 [error] Error: Error calling Cloud Shell Theia Authorization. unauthorized.
+    at module$exports$google3$third_party$cloudcode$vscode$common$packages$cloudshell$authorization.CloudShellTheiaAuth.runAuthorization (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1031975:210)
+    at CloudShellAuthProvider.getAccessToken (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1031853:3)
+    at module$exports$google3$cloud$developer_experience$datacloud_vscode$common$exthost$services$datacloud_experimentation_service.DatacloudExperimentationService.updateExperimentationDataCache (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1027563:63)
+    at module$exports$google3$cloud$developer_experience$datacloud_vscode$common$exthost$services$datacloud_experimentation_service.DatacloudExperimentationService.updateExperimentationDataCache (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1030518:367)
+    at module$exports$google3$cloud$developer_experience$datacloud_vscode$common$exthost$services$datacloud_experimentation_service.DatacloudExperimentationService.updateExperimentationData (/google/devshell/editor/code-oss-for-cloud-shell/extensions/googlecloudtools.datacloud/datacloud_vscode.js:1027562:376)

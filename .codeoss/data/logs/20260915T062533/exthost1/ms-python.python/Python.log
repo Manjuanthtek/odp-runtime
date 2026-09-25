@@ -1,0 +1,33 @@
+2026-09-15 06:26:05.838 [warning] Dir "/home/mdbaddi/.pixi/envs" is not watchable (directory does not exist)
+2026-09-15 06:26:08.839 [info] Starting Environment refresh
+2026-09-15 06:26:08.839 [info] Searching for interpreters in posix paths locator
+2026-09-15 06:26:08.849 [info] Searching for pyenv environments
+2026-09-15 06:26:08.849 [info] Searching for conda environments
+2026-09-15 06:26:08.850 [info] Searching for global virtual environments
+2026-09-15 06:26:08.850 [info] Searching for custom virtual environments
+2026-09-15 06:26:08.953 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
+2026-09-15 06:26:08.953 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
+2026-09-15 06:26:08.956 [info] pyenv is not installed
+2026-09-15 06:26:08.956 [info] Finished searching for pyenv environments: 116 milliseconds
+2026-09-15 06:26:08.957 [info] Finished searching for custom virtual envs: 114 milliseconds
+2026-09-15 06:26:08.974 [info] > conda info --json
+2026-09-15 06:26:08.991 [info] > hatch env show --json
+2026-09-15 06:26:08.991 [info] cwd: .
+2026-09-15 06:26:09.031 [info] > pyenv which python
+2026-09-15 06:26:09.031 [info] cwd: .
+2026-09-15 06:26:09.032 [info] Finished searching for global virtual envs: 190 milliseconds
+2026-09-15 06:26:09.154 [info] Found: /bin/python --> /bin/python3.12
+2026-09-15 06:26:09.175 [info] Found: /bin/python3 --> /bin/python3.12
+2026-09-15 06:26:09.185 [info] Found: /bin/python3.12 --> /bin/python3.12
+2026-09-15 06:26:09.240 [info] Found: /usr/bin/python --> /usr/bin/python3.12
+2026-09-15 06:26:09.250 [info] Found: /usr/bin/python3 --> /usr/bin/python3.12
+2026-09-15 06:26:09.253 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2026-09-15 06:26:09.399 [info] Finished searching for interpreters in posix paths locator: 548 milliseconds
+2026-09-15 06:26:09.399 [info] > /bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2026-09-15 06:26:09.478 [info] > /usr/bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2026-09-15 06:26:09.478 [info] Environments refresh paths discovered (event): 641 milliseconds
+2026-09-15 06:26:09.478 [info] Environments refresh paths discovered: 641 milliseconds
+2026-09-15 06:26:09.575 [info] Environments refresh finished (event): 737 milliseconds
+2026-09-15 06:26:09.599 [info] Environment refresh took 760 milliseconds
+2026-09-15 06:26:09.626 [info] Python interpreter path: /bin/python
+2026-09-15 06:26:16.973 [info] Starting Jedi language server for mdbaddi.

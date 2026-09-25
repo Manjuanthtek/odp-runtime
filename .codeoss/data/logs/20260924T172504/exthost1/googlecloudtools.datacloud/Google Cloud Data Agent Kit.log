@@ -1,0 +1,78 @@
+2026-09-24 17:25:27.124 [info] [OnboardingStatus] Updating context key 'gDataCloud.alreadyOnboarded' to false
+2026-09-24 17:25:27.124 [info] Getting gcloud config internal...
+2026-09-24 17:25:27.125 [info] Checking for gcloud binary path...
+2026-09-24 17:25:27.125 [info] Executing: which gcloud
+2026-09-24 17:25:27.125 [info] Getting gcloud config internal...
+2026-09-24 17:25:27.125 [info] Checking for gcloud binary path...
+2026-09-24 17:25:27.125 [info] Executing: which gcloud
+2026-09-24 17:25:27.125 [info] Checking for gcloud binary path...
+2026-09-24 17:25:27.125 [info] Executing: which gcloud
+2026-09-24 17:25:27.125 [info] hasGcloud: true
+2026-09-24 17:25:27.125 [info] Syncing gcloud settings to extension
+2026-09-24 17:25:27.125 [info] hasGcloud: true
+2026-09-24 17:25:27.125 [info] Getting gcloud config internal...
+2026-09-24 17:25:27.125 [info] [OnboardingPlugin] Cloud Code extension or Cloud Shell/Workstations detected. Skipping automatic onboarding.
+2026-09-24 17:25:27.125 [info] Executing: gcloud config config-helper --format json
+2026-09-24 17:25:27.125 [info] Activating bigquery
+2026-09-24 17:25:27.125 [info] ConversationalAnalyticsPlugin activated
+2026-09-24 17:25:27.125 [info] ConversationalAnalyticsPlugin: activate finished
+2026-09-24 17:25:27.125 [info] Activating Databases
+2026-09-24 17:25:27.125 [info] Activating Catalog Feature
+2026-09-24 17:25:27.125 [info] Registering Dataplex Project adapter unconditionally.
+2026-09-24 17:25:27.125 [info] Activating dataplex universal catalog
+2026-09-24 17:25:27.125 [info] Activating dataproc
+2026-09-24 17:25:27.125 [info] Activating spark resource tree
+2026-09-24 17:25:27.125 [info] SparkMonitorPlugin: Activating...
+2026-09-24 17:25:27.125 [info] SparkMonitorPlugin: State change - experiment: true, setting: true, overall: true
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.219Z] appName: Code OSS for Cloud Shell, ideType: 6
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.219Z] Profile antigravity-ide is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.219Z] Profile antigravity is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.219Z] Profile jetski is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.219Z] Profile cursor is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.219Z] Profile copilot is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.220Z] Profile gemini-code-assist is active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.220Z] appName: Code OSS for Cloud Shell, ideType: 6
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.220Z] Profile antigravity-ide is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.220Z] Profile antigravity is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.220Z] Profile jetski is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.220Z] Profile cursor is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.220Z] Profile copilot is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.220Z] Profile gemini-code-assist is active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.221Z] Activating Agent Skill Installer
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.233Z] appName: Code OSS for Cloud Shell, ideType: 6
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.233Z] Profile antigravity-ide is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.233Z] Profile antigravity is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.233Z] Profile jetski is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.233Z] Profile cursor is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.233Z] Profile copilot is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.233Z] Profile gemini-code-assist is active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.234Z] appName: Code OSS for Cloud Shell, ideType: 6
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.234Z] Profile antigravity-ide is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.234Z] Profile antigravity is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.234Z] Profile jetski is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.234Z] Profile cursor is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.234Z] Profile copilot is NOT active
+2026-09-24 17:25:27.125 [info] [2026-09-24T17:25:20.234Z] Profile gemini-code-assist is active
+2026-09-24 17:25:27.125 [info] Executing: gcloud config config-helper --format json
+2026-09-24 17:25:27.125 [info] Executing: gcloud config config-helper --format json
+2026-09-24 17:25:27.125 [info] [MCP Registry] Listening on socket: /tmp/datacloud-mcp-notebooks-codeossforcloudshell.sock
+2026-09-24 17:25:27.125 [info] [MCP Registry] Server 'notebooks' listening on IPC socket: /tmp/datacloud-mcp-notebooks-codeossforcloudshell.sock
+2026-09-24 17:25:27.125 [info] [MCP Registry] Listening on socket: /tmp/datacloud-mcp-visualization-codeossforcloudshell.sock
+2026-09-24 17:25:27.125 [info] [MCP Registry] Server 'visualization' listening on IPC socket: /tmp/datacloud-mcp-visualization-codeossforcloudshell.sock
+2026-09-24 17:25:27.125 [info] [MCP Registry] Listening on socket: /tmp/datacloud-mcp-dataAgentKit-codeossforcloudshell.sock
+2026-09-24 17:25:27.125 [info] [MCP Registry] Server 'dataAgentKit' listening on IPC socket: /tmp/datacloud-mcp-dataAgentKit-codeossforcloudshell.sock
+2026-09-24 17:25:27.125 [info] MCP config plugin: MCP config key: mcpServers
+2026-09-24 17:25:27.125 [info] MCP config plugin: ideType: 6
+2026-09-24 17:25:27.125 [info] Checking if identities match...Fetching ADC account name...
+2026-09-24 17:25:27.240 [info] MCP config plugin: MCP config key: mcpServers
+2026-09-24 17:25:27.241 [info] SparkMonitorPlugin: Wrote filter config file with value: true
+2026-09-24 17:25:27.750 [info] [2026-09-24T17:25:27.750Z] Checking skills for Gemini Code Assist in /home/mdbaddi/.gemini/skills. Force=false
+2026-09-24 17:25:27.752 [info] [2026-09-24T17:25:27.752Z] Bundle checksum match. Skipping installation.
+2026-09-24 17:25:27.757 [info] [2026-09-24T17:25:27.753Z] Syncing telemetry hooks for gemini-code-assist. Telemetry enabled: true
+2026-09-24 17:25:27.764 [info] [2026-09-24T17:25:27.764Z] Hook plugin for gemini-code-assist installed successfully to /home/mdbaddi/.gemini/config/plugins/googlecloudtools.datacloud_telemetry
+2026-09-24 17:25:29.729 [info] Identity match check: {"gcloudAccountEmpty":false,"vscodeAccountEmpty":false,"gcloudAdcAccountEmpty":false,"gcloudAccountMatchesVscode":true,"gcloudAdcAccountMatchesVscode":true}
+2026-09-24 17:25:35.056 [info] MCP config plugin: ideType: 6
+2026-09-24 17:25:35.056 [info] SparkMonitorPlugin: State change - experiment: true, setting: true, overall: true
+2026-09-24 17:25:35.076 [info] MCP config plugin: MCP config key: mcpServers
+2026-09-24 17:25:35.198 [info] SparkMonitorPlugin: Wrote filter config file with value: true
+2026-09-24 18:22:51.755 [info] proactively refreshing access token

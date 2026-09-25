@@ -1,0 +1,72 @@
+name: OPA CI/CD
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  opa-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup OPA CLI
+        uses: open-policy-agent/setup-opa@v2
+        with:
+          version: latest
+
+      - name: Check Rego Formatting
+        run: |
+          # Fails if any .rego files are not formatted according to 'opa fmt'
+          opa fmt --fail .
+
+      - name: OPA Check (Syntax Validation)
+        run: |
+          opa check .
+
+      - name: Run OPA Tests
+        run: |
+          opa test . -v
+
+  opa-deploy:
+    name: Build and Deploy OPA Bundle
+    needs: opa-validation
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup OPA CLI
+        uses: open-policy-agent/setup-opa@v2
+        with:
+          version: latest
+
+      - name: Build Policy Bundle
+        run: |
+          # Compiles Rego policies into a production-optimized bundle
+          opa build . -o bundle.tar.gz
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and Push Docker Image
+        run: |
+          # Construct the image name using your GitHub handle
+          IMAGE_ID=ghcr.io/${{ github.repository_owner }}/opa-policy-pod
+          
+          # Convert to lowercase (required for Docker tags)
+          IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
+          
+          echo "Building image $IMAGE_ID..."
+          docker build -t $IMAGE_ID:${{ github.sha }} .
+          docker tag $IMAGE_ID:${{ github.sha }} $IMAGE_ID:latest
+          docker push $IMAGE_ID:${{ github.sha }}
+          docker push $IMAGE_ID:latest

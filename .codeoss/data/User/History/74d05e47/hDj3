@@ -1,0 +1,8 @@
+# Cloud Shell / Cloud Code caches
+.cache/
+
+# OPA Bundles
+bundle.tar.gz
+
+# OS metadata
+.DS_Store

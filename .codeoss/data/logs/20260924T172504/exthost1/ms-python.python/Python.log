@@ -1,0 +1,19 @@
+2026-09-24 17:25:27.124 [warning] Dir "/home/mdbaddi/.pixi/envs" is not watchable (directory does not exist)
+2026-09-24 17:25:29.508 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
+2026-09-24 17:25:29.537 [info] > conda info --json
+2026-09-24 17:25:29.541 [info] Python interpreter path: /bin/python
+2026-09-24 17:25:29.684 [info] > pyenv which python
+2026-09-24 17:25:29.685 [info] cwd: .
+2026-09-24 17:25:36.445 [info] Starting Jedi language server for mdbaddi.
+2026-09-24 17:51:57.922 [info] Send text to terminal: # Add the remote named 'origin'
+git remote add origin https://github.com/Manjuanthtek/<REPO_NAME>.git
+
+# Verify that it was added correctly
+git remote -v
+
+2026-09-24 17:52:42.269 [info] Send text to terminal: # Check your current branch name
+git branch
+
+# Push the code (replace 'main' with your branch name if it is different)
+git push -u origin main
+

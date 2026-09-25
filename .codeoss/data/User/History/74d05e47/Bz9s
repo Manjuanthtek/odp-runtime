@@ -1,0 +1,12 @@
+# Cloud Shell / Cloud Code caches
+.cache/
+.google/
+node_modules/
+__pycache__/
+*.log
+
+# OPA Bundles
+bundle.tar.gz
+
+# OS metadata
+.DS_Store

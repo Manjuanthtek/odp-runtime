@@ -1,0 +1,32 @@
+name: OPA CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  opa-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup OPA CLI
+        uses: open-policy-agent/setup-opa@v2
+        with:
+          version: latest
+
+      - name: Check Rego Formatting
+        run: |
+          # Fails if any .rego files are not formatted according to 'opa fmt'
+          opa fmt --fail .
+
+      - name: OPA Check (Syntax Validation)
+        run: |
+          opa check .
+
+      - name: Run OPA Tests
+        run: |
+          opa test . -v
