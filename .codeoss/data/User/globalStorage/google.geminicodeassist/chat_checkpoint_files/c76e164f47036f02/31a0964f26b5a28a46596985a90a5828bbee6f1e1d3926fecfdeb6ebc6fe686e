@@ -1,10 +1,6 @@
 # Cloud Shell / Cloud Code caches
 .cache/
 .google/
-.local/
-.config/
-.ssh/
-.bash*
 node_modules/
 __pycache__/
 *.log

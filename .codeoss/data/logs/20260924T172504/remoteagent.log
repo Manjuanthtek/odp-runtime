@@ -10,3 +10,4 @@
 2026-09-24 17:25:11.018 [info] [127.0.0.1][afa75a28][ExtensionHostConnection] <1514> Launched Extension Host Process.
 2026-09-24 17:25:12.391 [info] [127.0.0.1][afa75a28][ExtensionHostConnection] <1514> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
 
+2026-09-24 18:17:21.595 [info] [127.0.0.1][c964c1d7][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...

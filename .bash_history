@@ -183,3 +183,33 @@ git checkout -b test-opa-ci
 git init 
 git checkout -b test-opa-ci
 git status 
+git add . 
+git commit -m "Testing OPA CI"
+git config --global user.name "Manjunath Baddi"
+git commit -m "Testing OPA CI"
+git push origin test-opa-ci
+git remote -v
+# Add the remote named 'origin'
+git remote add origin https://github.com/Manjuanthtek/<REPO_NAME>.git
+# Verify that it was added correctly
+git remote -v
+git remote add origin https://github.com/Manjuanthtek/odp-runtime.git
+git remote -v
+# Check your current branch name
+git branch
+# Push the code (replace 'main' with your branch name if it is different)
+git push -u origin main
+git branch 
+git remote -v
+git push -u origin main
+git branch 
+git push -u origin master
+git push -u origin test-opa-ci
+git rm -r --cached .cache
+git add .github/workflows/opa-ci.yml .gitignore
+git commit -m "chore: remove large cache files and add OPA CI/CD workflow"
+git push origin test-opa-ci
+gcloud services enable cloudkms.googleapis.com 
+gcloud kms keyrings create odp-keyring --location=asia-south1
+gcloud kms keys create odp-policy-key --location=asia-south1 --keyring=odp-keyring --purpose=encryption
+git status 
