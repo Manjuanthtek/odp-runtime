@@ -20,16 +20,30 @@ jobs:
 
       - name: Check Rego Formatting
         run: |
-          # Fails if any .rego files are not formatted according to 'opa fmt'
-          opa fmt --fail .
+          find . -type f -name '*.rego' \
+            ! -path './.codeoss/*' \
+            ! -path './.gemini/*' \
+            ! -path './.local/*' \
+            ! -path './node_modules/*' \
+            -print0 | xargs -0 -r opa fmt --fail
 
       - name: OPA Check (Syntax Validation)
         run: |
-          opa check .
+          find . -type f -name '*.rego' \
+            ! -path './.codeoss/*' \
+            ! -path './.gemini/*' \
+            ! -path './.local/*' \
+            ! -path './node_modules/*' \
+            -print0 | xargs -0 -r opa check
 
       - name: Run OPA Tests
         run: |
-          opa test . -v
+          find . -type f -name '*.rego' \
+            ! -path './.codeoss/*' \
+            ! -path './.gemini/*' \
+            ! -path './.local/*' \
+            ! -path './node_modules/*' \
+            -print0 | xargs -0 -r opa test -v
 
   opa-deploy:
     name: Build and Deploy OPA Bundle
